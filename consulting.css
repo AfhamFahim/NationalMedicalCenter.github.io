@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #01082D; /* Dark background */
+    color: #FFFFFF; /* White text */
+}
+
+header {
+    background-color: #041D56; /* Slightly lighter dark blue for the header */
+    color: #FFFFFF;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ADE1FB;
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block; 
+}
+
+
+footer {
+    background: #041D56; /* Same color as header */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+/* Responsive Image */
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Flexbox Layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-container .service-item {
+    flex: 1 1 30%;
+    margin: 10px;
+    background-color: #041D56; /* Background color for service items */
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.flex-container .service-item:hover {
+    background-color: #266CA9; /* Gold color on hover */
+    color: #01082D; /* Dark text on hover */
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #041D56; /* Dark background for the form */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label, form input, form select, form textarea {
+    margin-bottom: 10px;
+    color: #fff; /* White text for form labels and inputs */
+}
+
+form input[type="text"], form input[type="email"], form input[type="month"], form textarea, form select {
+    background-color: #01082D; /* Dark background for form fields */
+    color: #fff; /* White text */
+    border: 1px solid #fff; /* White border */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="month"]:focus, form textarea:focus, form select:focus {
+    border-color: #266CA9; /* Gold border on focus */
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #266CA9; /* Gold background for submit button */
+    color: #FFFFFF; /* Dark text */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #01082D; /* Slightly darker gold on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .flex-container, .grid-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,163 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #01082D; 
+    color: #ADE1FB; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #041D56; /* Slightly lighter dark blue for the header */
+    color: #FFFFFF;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ADE1FB;
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block; 
+}
+
+
+footer {
+    background: #041D56; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    background-color: #01082D; 
+    color: #ADE1FB; 
+}
+
+h1, h3 {
+    color: #ADE1FB; 
+    margin: 20px;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #0F2573; 
+    color: #fff;
+}
+
+th, td {
+    border: 1px solid #266CA9; 
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #266CA9; 
+    color: #ADE1FB; 
+}
+
+td {
+    color: #fff; 
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+input[type="number"], select {
+    margin: 10px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #0F2573; 
+    color: #fff;
+    border: 1px solid #266CA9; 
+}
+
+button {
+    background-color: #266CA9; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0F2573; 
+}
+
+
+section {
+    background-color: #041D56; 
+    color: #ADE1FB; 
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+img {
+    border: 3px solid #266CA9; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+    /* Responsive */
+
+    @media (max-width: 768px) {
+        header {
+            text-align: center;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            padding: 0;
+        }
+    
+        nav ul li {
+            margin: 10px 0;
+        }
+    
+        h1, h3 {
+            font-size: 1.5em;
+        }
+    
+        select, input[type="number"] {
+            width: 100%;
+        }
+    
+        table {
+            font-size: 0.9em;
+        }
+    
+        button {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }

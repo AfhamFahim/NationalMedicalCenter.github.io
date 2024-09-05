@@ -1,0 +1,159 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #01082D;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+
+}
+
+.hero {
+    background-color: #266CA9; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+
+
+}
+
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+header {
+    background-color: #041D56; /* Slightly lighter dark blue for the header */
+    color: #FFFFFF;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ADE1FB;
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block; 
+}
+
+footer {
+    background: #041D56;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Grid Layout for Doctors Section */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Doctor Item Styling */
+.doctor-item {
+    background-color: #041D56;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* Set a consistent size for all images */
+.doctor-item img {
+    width: 100%;  /* This makes the image responsive */
+    max-width: 180px; /* Control maximum width */
+    height: 180px; /* Fix the height */
+    object-fit: cover; /* Crop the image to fit within the fixed size */
+    border-radius: 50%;
+}
+
+/* Add hover effect for doctor items */
+.doctor-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form select, form textarea {
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+    /* Responsive */
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .doctor-item img {
+        max-width: 100%; 
+        height: auto;
+    }
+}
+

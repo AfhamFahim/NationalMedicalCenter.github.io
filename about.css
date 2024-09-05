@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #01082D; /* Using the darkest blue for the background */
+    color: #FFFFFF; /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header Style */
+header {
+    background-color: #041D56; /* Slightly lighter dark blue for the header */
+    color: #FFFFFF;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ADE1FB;
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block; 
+}
+
+/* Hero Section Style */
+.hero {
+    background-color: #266CA9; /* Mid-tone blue for the hero background */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Main Section Style */
+main {
+    padding: 20px;
+    background-color: #01082D; /* Same as body background for a consistent look */
+    color: #FFFFFF; /* White text for readability */
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering Sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+section h1, section h2 {
+    color: #ADE1FB; /* Use the lightest blue for headings */
+}
+
+section p {
+    color: #FFFFFF; /* White text for the paragraphs */
+    text-align: center;
+    max-width: 800px; /* Limit paragraph width for readability */
+}
+
+/* Image Styling - Making All Images the Same Size and Centering */
+img {
+    width: 600px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    border: 2px solid #266CA9; /* Mid-tone blue for image border */
+    margin-bottom: 20px;
+}
+
+/* Summary Table Style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #041D56; /* Background color of the table to match header */
+    color: #FFFFFF;
+}
+
+table th, table td {
+    border: 1px solid #266CA9;
+    padding: 10px;
+}
+
+table th {
+    background-color: #266CA9; /* Mid-tone blue for table header */
+    color: #FFFFFF;
+}
+
+table tfoot {
+    background-color: #01082D; /* Dark blue for the table footer */
+    font-weight: bold;
+}
+
+/* Footer Style */
+footer {
+    background-color: #041D56;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

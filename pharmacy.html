@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/img3.jpg">
+    <title>Medicine Order Page</title>
+    <link rel="stylesheet" href="pharmacy.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <!-- Other links here -->
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1>Order Medicine</h1>
+
+    <!-- Analgesics Section -->
+    <h3>Analgesics</h3>
+    <select id="analgesic-select">
+        <option value="paracetamol,5">Paracetamol - $5</option>
+        <option value="aspirin,3">Aspirin - $3</option>
+        <option value="ibuprofen,7">Ibuprofen - $7</option>
+        <option value="antihistamines,8">Antihistamines - $8</option>
+        <option value="claritin,6">Claritin - $6</option>
+        <option value="allegra,7">Allegra - $7</option>
+      
+    </select>
+    <input type="number" id="analgesic-qty" min="1" value="1">
+    <button onclick="addItem('analgesic')">Add</button>
+
+    <!-- Antibiotics Section -->
+    <h3>Antibiotics</h3>
+    <select id="antibiotic-select">
+        <option value="amoxicillin,10">Amoxicillin - $10</option>
+        <option value="penicillin,11">Penicillin - $11</option>
+        <option value="cephalosporin,7">Cephalosporin - $7</option>
+        <option value="tetracycline,3">Tetracycline - $3</option>
+        <option value="macrolides,9">Macrolides - $9</option>
+        <option value="carbapenem,5">Carbapenem - $5</option>
+        
+    </select>
+    <input type="number" id="antibiotic-qty" min="1" value="1">
+    <button onclick="addItem('antibiotic')">Add</button>
+
+    <h3>Antidepressant</h3>
+    <select id="antidepressant-select">
+        <option value="Zoloft,10">Zoloft - $10</option>
+        <option value="fluoxetine ,5">fluoxetine  - $5</option>
+        <option value="escitalopram ,7">escitalopram  - $7</option>
+        <option value="paroxetine ,9">paroxetine  - $9</option>
+        <option value="Celexa,8">Celexa - $8</option>
+        <option value="Serotonin ,11">Serotonin  - $11</option>
+       
+    </select>
+    <input type="number" id="antidepressant-qty" min="1" value="1">
+    <button onclick="addItem('antidepressant')">Add</button>
+
+    <h3>Antihistamines</h3>
+    <select id="antihistamines-select">
+        <option value="Cetirizine,10">Cetirizine - $10</option>
+        <option value="Xyzal,3">Xyzal - $3</option>
+        <option value="Clarinex,7">Clarinex - $7</option>
+        <option value="Brompheniramine,8">Brompheniramine - $8</option>
+        <option value="Benadryl,12">Benadryl - $12</option>
+        <option value="Desloratadine,9">Desloratadine - $9</option>
+      
+    </select>
+    <input type="number" id="antihistamines-qty" min="1" value="1">
+    <button onclick="addItem('antihistamines')">Add</button>
+
+    <h3>Antihypertensives</h3>
+    <select id="antihypertensives-select">
+        <option value="captopril ,9">captopril  - $9</option>
+        <option value="enalapril ,5">enalapril - $5</option>
+        <option value="fosinopril ,7">fosinopril - $7</option>
+        <option value="lisinopril ,8">lisinopril  - $8</option>
+        <option value="Monopril,4">Monopril - $4</option>
+        <option value="Prinivil,6">Prinivil - $6</option>
+       
+    </select>
+    <input type="number" id="antihypertensives-qty" min="1" value="1">
+    <button onclick="addItem('antihypertensives')">Add</button>
+
+    <!-- Order Summary Table -->
+    <h3>Order Summary</h3>
+    <table id="order-summary">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="order-items">
+            <!-- Items will be dynamically added here -->
+        </tbody>
+    </table>
+    <h4>Total Price: $<span id="total-price">0</span></h4>
+
+
+    <button onclick="saveToFavourites()">Add to Favourites</button>
+    <button onclick="applyFavourites()">Apply Favourites</button>
+    <button onclick="buyNow()">Buy Now</button>
+
+
+
+    <script src="pharmacy.js"></script>
+</body>
+</html>

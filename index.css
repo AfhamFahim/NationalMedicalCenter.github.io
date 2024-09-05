@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #01082D; 
+    color: #FFFFFF; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Header Style */
+header {
+    background-color: #041D56; 
+    color: #FFFFFF;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+nav ul li a {
+    color: #ADE1FB;
+    text-decoration: none;
+    padding: 10px 15px; 
+    display: block; 
+}
+
+
+
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* Hero Section Style */
+.hero {
+    background-color: #266CA9; 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 20px;
+    width: 100%;
+
+
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ADE1FB;
+    color: #041D56;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0F2573; 
+}
+
+/* Main Section Style */
+main {
+    padding: 20px;
+    background-color: #01082D; 
+    color: #FFFFFF; 
+    width: 100%;
+    text-align: center;
+}
+
+/* Centering Sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+section h1, section h2 {
+    color: #ADE1FB; 
+}
+
+section p {
+    color: #FFFFFF; 
+    text-align: center;
+    max-width: 800px; 
+}
+
+/* Image Styling - Making All Images the Same Size and Centering */
+img {
+    width: 600px; 
+    height: 400px; 
+    object-fit: cover; 
+    border: 2px solid #266CA9; 
+    margin-bottom: 20px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #041D56;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.testimonials h2 {
+    margin-bottom: 30px;
+    color: #ADE1FB;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+    max-width: 800px; 
+    text-align: center;
+}
+
+.testimonial span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ADE1FB;
+}
+
+/* Contact/Newsletter Signup Section */
+.contact-signup {
+    background-color: #266CA9;
+    color: #FFFFFF;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-signup h2 {
+    margin-bottom: 20px;
+}
+
+.contact-signup form {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.contact-signup input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-signup input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #01082D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-signup input[type="submit"]:hover {
+    background-color: #041D56;
+}
+
+/* Enhanced Footer */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #041D56;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    list-style: none;
+
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    list-style: none;
+    text-align: center;
+    background-color: #fefefe;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .service-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

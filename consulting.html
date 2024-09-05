@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="images/img3.jpg">
+    <title>Consulting Reservation - Nation Medical Center</title>
+    <link rel="stylesheet" href="consulting.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="pharmacy.html">Pharmacy</a></li>
+                <!-- Other links here -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Reserve a Consultation</h1>
+            <form action="submit-consultation.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor">
+                    <option value="doctor1">Dr. John Doe</option>
+                    <option value="doctor2">Dr. Ameena Syed</option>
+                    <option value="doctor2">Dr. Arthur Reese</option>
+                    <option value="doctor2">Dr. Myles. B. Abbott</option>
+                    <!-- More doctors -->
+                </select>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <input type="submit" value="Reserve Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nation Medical Center. All rights reserved.</p>
+    </footer>
+</body>
+</html>
